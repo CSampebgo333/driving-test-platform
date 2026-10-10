@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Your results — Driving Test Practice Mode</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main id="main" class="container results-main" hidden>
     <header class="results-header">
-
+      <p class="eyebrow">Driving Test — Practice Mode</p>
+      <h1>Your results</h1>
     </header>
 
     <section class="grade-card" id="grade-card" aria-labelledby="grade-heading">
-
+      <h2 id="grade-heading" class="sr-only">Your grade</h2>
+      <p class="score-percent" id="score-percent"></p>
+      <p class="grade-band" id="grade-band"></p>
+      <p class="score-summary" id="score-summary"></p>
     </section>
 
     <section aria-labelledby="corrections-title">
-
+      <h2 id="corrections-title" class="section-title">Corrections</h2>
+      <ol class="review-list" id="review-list"></ol>
     </section>
+
+    <div class="actions no-print">
+      <button type="button" class="btn btn-primary" id="retake-btn">Retake the test</button>
+      <button type="button" class="btn btn-outline-secondary" id="print-btn">Print / Save as PDF</button>
+    </div>
   </main>
 
   <noscript><p class="container">This page needs JavaScript to show your results.</p></noscript>
